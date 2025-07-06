@@ -1,0 +1,7 @@
+[mgr]
+cwd = {fg = "#ebdbb2", bg = "#282828"}
+hovered = {fg = "#282828", bg = "#ebdbb2"}
+preview_hovered = {fg = "#282828", bg = "#ebdbb2"}
+border_symbol = " "
+
+[tabs]
