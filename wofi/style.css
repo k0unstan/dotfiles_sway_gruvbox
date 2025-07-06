@@ -1,0 +1,89 @@
+/* Gruvbox Dark Theme for Wofi */
+
+@define-color bg      #282828;  /* dark0_hard */
+@define-color fg      #ebdbb2;  /* light1 */
+@define-color red     #cc241d;  /* red */
+@define-color green   #98971a;  /* green */
+@define-color yellow  #d79921;  /* yellow */
+@define-color blue    #458588;  /* blue */
+@define-color purple  #b16286;  /* purple */
+@define-color aqua    #689d6a;  /* aqua */
+@define-color orange  #ebdbb2;  /* orange */
+@define-color gray    #282828;  /* neutral gray */
+
+/* main window */
+window {
+  border:        none;
+  border-radius: 5px;
+  background:    @bg;
+  color:         @fg;
+}
+
+/* ввод строки поиска */
+#input {
+  margin:            15px;
+  padding:           8px 10px;
+  border:            none;
+  border-radius:     5px;
+  background-color:  @gray;
+  color:             @fg;
+}
+
+/* контейнер для элементов */
+#outer-box {
+  margin:           5px;
+  padding:          5px;
+  background-color: @bg;
+  color:        @orange;
+  border-radius:    5px;
+}
+
+/* контейнер элементов (внутренний) */
+#inner-box {
+  margin:           3px;
+  padding:          3px;
+  background-color: @bg;
+}
+
+/* одна строка текста */
+#text {
+  margin:      5px 10px;
+  padding:     5px;
+  color:       @fg;
+  border:      none;
+  border-radius: 4px;
+}
+
+/* выделенный элемент */
+#text:selected {
+  color:             @bg;
+  background-color:  @orange;
+}
+
+/* для отображения того, что введено */
+#entry {
+  margin:            0px 10px;
+  padding:           2px 10px;
+  border:            none;
+  border-radius:     5px;
+  background-color:  @bg;
+  color:             @fg;
+}
+
+/* выделенный пункт в списке при навигации */
+#entry:selected {
+  background-color:  @orange;
+  color:             @bg;
+}
+
+/* Scrollbar (если нужна) */
+scrollbar {
+  background-color:  @gray;
+  border-radius:     4px;
+  width:             6px;
+}
+
+scrollbar slider {
+  background-color:  @orange;
+  border-radius:     4px;
+}
