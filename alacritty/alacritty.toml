@@ -10,7 +10,7 @@ blur = true
 title = "term"
 
 [font]
-normal = {family = "IosevkaNerdFont", style = "Regular"}
+normal = {family = "IosevkaNerdFont", style = "Bold"}
 size = 13
 
 [selection]

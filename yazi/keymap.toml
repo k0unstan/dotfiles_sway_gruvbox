@@ -86,3 +86,7 @@ desc = "custom-shell as default"
 on   = [ "c", "p" ]
 run  = "plugin command"
 desc = "Yazi command prompt"
+
+[[mgr.prepend_keymap]]
+on  = "M"
+run = "plugin mount"

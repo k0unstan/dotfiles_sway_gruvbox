@@ -1,7 +1,7 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "layer": "top", // Waybar at top layer
+    //"position": "right", // Waybar position (top|bottom|left|right)
     "height": 20, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
@@ -11,7 +11,8 @@
         "sway/window",
     ],
     "modules-center": [
-        "clock"
+        "clock",
+		"mpd",
     ],
     "modules-right": [
         "pulseaudio",
@@ -131,12 +132,12 @@
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        "format-charging": "{capacity}%  ",
+        "format-plugged": "{capacity}%  ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [" ", " ", " ", " ", " "]
     },
     "battery#bat2": {
         "bat": "BAT2"
@@ -148,16 +149,16 @@
       "format-icons": {
         "default": "",
         "performance": "",
-        "balanced": "",
-        "power-saver": ""
+        "balanced": " ",
+        "power-saver": " "
       }
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid}  ",
         "format-ethernet": "{ipaddr}/{cidr} 󰩟 ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
+        "tooltip-format": "{ifname} via {gwaddr}  ",
+        "format-linked": "{ifname} (No IP)  ",
         "format-disconnected": "Disconnected  ",
         "format-alt": "{ifname}: {ipaddr}/{cidr} 󰩟 "
     },
@@ -168,15 +169,15 @@
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format-source-muted": " ",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
             "car": "",
-            "default": ["", "", ""]
+            "default": ["", "", " "]
         },
         "on-click": "pavucontrol"
     },
